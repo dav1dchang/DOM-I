@@ -110,4 +110,24 @@ const middleImage = document.querySelector('#middle-img')
 middleImage.src = 'img/mid-page-accent.jpg'
 
 //changing the color of the nav text to green
-document.querySelectorAll('a').style.color = 'green'
+nav[0].style.color = 'green'
+nav[1].style.color = 'green'
+nav[2].style.color = 'green'
+nav[3].style.color = 'green'
+nav[4].style.color = 'green'
+nav[5].style.color = 'green'
+
+//adding two new nav items
+const item1 = document.createElement('a')
+item1.href = '#'
+item1.textContent = 'Team'
+document.querySelector('nav').appendChild(item1)
+
+const item2 = document.createElement('a')
+item2.href = '#'
+item2.textContent = 'Mission'
+document.querySelector('nav').prependChild(item2)
+
+//turning two new nav items green
+item1.style.color = 'green'
+item2.style.color = 'green'
