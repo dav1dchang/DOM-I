@@ -121,12 +121,12 @@ nav[5].style.color = 'green'
 const item1 = document.createElement('a')
 item1.href = '#'
 item1.textContent = 'Team'
-document.querySelector('nav').appendChild(item1)
+document.querySelector('nav').prepend(item1)
 
 const item2 = document.createElement('a')
 item2.href = '#'
 item2.textContent = 'Mission'
-document.querySelector('nav').prependChild(item2)
+document.querySelector('nav').appendChild(item2)
 
 //turning two new nav items green
 item1.style.color = 'green'
